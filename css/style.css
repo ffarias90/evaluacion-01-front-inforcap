@@ -1,4 +1,6 @@
 
+* {
+    font-family: 'Quicksand', sans-serif;}
 
 nav {
     display: flex;
@@ -94,6 +96,8 @@ nav ul li{
 .grid-videos {
     border-top: 1px solid rgba(128, 128, 128, 0.239);
     padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid-videos  p {
@@ -121,3 +125,57 @@ nav ul li{
     font-weight: 300;
     font-size: 16px;
 }
+
+@media (max-width: 640px) {
+    .fa-search, .fa-video-camera, .fa-plus, .profile-buttons{
+        display: none;
+    }
+
+    .banner {
+        min-height: 110px;
+    }
+
+    .profile {
+        justify-content: center;
+    }
+
+    .profile-left img {
+        width: 100px;
+    }
+
+    .name span {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .name p {
+        margin: 0px;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    .grid-videos {
+        border-top: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .grid-videos  p {
+        text-align: center;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .card p {
+        text-align: start;
+    }
+
+}
+
